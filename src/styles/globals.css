@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@layer base {
+  :root {
+    --lab-black: #0a0a0a;
+    --lab-white: #f0ece4;
+    --lab-chrome: #c0c0c0;
+    --lab-neon: #b8ff00;
+    --lab-pink: #ff3cac;
+    --lab-cyan: #00e5ff;
+    --lab-violet: #7b2dff;
+  }
+
+  html {
+    background-color: var(--lab-black);
+    color: var(--lab-white);
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    min-height: 100dvh;
+  }
+
+  ::selection {
+    background-color: var(--lab-neon);
+    color: var(--lab-black);
+  }
+}
+
+@layer components {
+  .lab-card {
+    @apply rounded-2xl border border-lab-chrome/10 bg-lab-glass p-6 backdrop-blur-md;
+  }
+
+  .lab-badge {
+    @apply inline-flex items-center gap-1.5 rounded-pill border border-lab-chrome/20 px-3 py-1 text-xs font-mono uppercase tracking-wider text-lab-chrome;
+  }
+
+  .lab-button {
+    @apply inline-flex items-center justify-center gap-2 rounded-pill bg-lab-neon px-6 py-2.5 text-sm font-semibold text-lab-black transition-all hover:shadow-glow active:scale-[0.97];
+  }
+
+  .lab-button-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-pill border border-lab-chrome/30 px-6 py-2.5 text-sm font-medium text-lab-white transition-all hover:border-lab-neon hover:text-lab-neon;
+  }
+}
