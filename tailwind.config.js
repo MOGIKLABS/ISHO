@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       /* Y2K Laboratory aesthetic tokens */
       colors: {
+        primary: '#00328a',
         lab: {
           black: '#0a0a0a',
           white: '#f0ece4',
@@ -17,6 +18,7 @@ module.exports = {
         },
       },
       fontFamily: {
+        sora: ['Sora', 'sans-serif'],
         display: ['"Bricolage Grotesque"', 'sans-serif'],
         body: ['"DM Sans"', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],

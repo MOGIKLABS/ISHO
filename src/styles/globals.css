@@ -16,9 +16,9 @@
   }
 
   html {
-    background-color: var(--lab-black);
-    color: var(--lab-white);
-    font-family: 'DM Sans', sans-serif;
+    background-color: #f9f9f9;
+    color: #00328a;
+    font-family: 'Sora', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -28,8 +28,8 @@
   }
 
   ::selection {
-    background-color: var(--lab-neon);
-    color: var(--lab-black);
+    background-color: #00328a;
+    color: #ffffff;
   }
 }
 
